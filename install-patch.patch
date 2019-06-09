@@ -1,4 +1,4 @@
-From 98be24a07d773a0b982b6766701249551000ed4e Mon Sep 17 00:00:00 2001
+From b7548cf91a3eccbdf66e7702241f1047d8a4c724 Mon Sep 17 00:00:00 2001
 From: Aaron Moore <aaron@atamisk.net>
 Date: Sun, 9 Jun 2019 09:04:12 -0400
 Subject: [PATCH] Removed symlink to user's home directory.
@@ -23,14 +23,14 @@ index 979f943..deba568 100644
  	@echo removing executable file from ${DESTDIR}${PREFIX}/bin
  	@rm -f ${DESTDIR}${PREFIX}/bin/gllock
 diff --git a/config.mk b/config.mk
-index 3c77c50..23e8408 100644
+index ce5cbf6..23e8408 100644
 --- a/config.mk
 +++ b/config.mk
 @@ -4,7 +4,7 @@ VERSION = 0.1-alpha
  # Customize below to fit your system
  
  # paths
--SHADER_LOCATION = /home/kuravih/.gllock
+-SHADER_LOCATION = $(HOME)/.gllock
 +SHADER_LOCATION = /usr/lib/gllock/shaders/
  
  # shader

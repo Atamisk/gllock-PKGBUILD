@@ -6,17 +6,17 @@
 # Maintainer: Aaron Moore <aaron@atamisk.net>
 pkgname=gllock-git
 _pkgname_nogit=${pkgname%-git}
-pkgver=r60.b232999
+pkgver=r62.e83f263
 pkgrel=1
 epoch=
 pkgdesc="Not so simple opengl based X display locker utility"
 arch=('x86_64')
-url="https://github.com/Atamisk/gllock"
+url="https://github.com/kuravih/gllock"
 license=('MIT')
 depends=()
 makedepends=()
 optdepends=()
-source=("git+https://github.com/Atamisk/gllock.git")
+source=("git+https://github.com/kuravih/gllock.git")
 noextract=()
 md5sums=('SKIP')
 
